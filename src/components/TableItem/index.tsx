@@ -19,7 +19,7 @@ export const TableItem = ({ item }: Props) => {
       </TableColumn>
       <TableColumn>{item.title}</TableColumn>
       <TableColumn>
-        <Value color={categories[item.category].expense ? '#B22727' : '#006E7F' }>
+        <Value color={categories[item.category].expense ? '#de787d' : '#50b4ad' }>
           {formatCurrencyBRL(item.value)}
         </Value>
       </TableColumn>
