@@ -20,6 +20,8 @@ export const MonthArrow = styled.div`
   text-align: center;
   font-size: 25px;
   cursor: pointer;
+  font-weight: bold;
+  color: #90A1A5
 `
 
 export const MonthTitle = styled.div`
