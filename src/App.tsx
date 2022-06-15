@@ -3,17 +3,15 @@ import { useState, useEffect } from "react"
 import { Container, Header, HeaderText, Body } from "./App.styles"
 import { TableArea } from "./components/TableArea"
 
-import { Category } from "./types/Category"
 import { Item } from "./types/Item"
-import { categories } from "./data/categories"
 import { items } from "./data/items"
 import { getCurrentMonth, filterListByMonth } from "./helpers/dateFilter"
 
 
 const App = () => {
-  const [list, setList] = useState(items)
+  const [list] = useState(items)
   const [filteredList, setFilteredList] = useState<Item[]>([])
-  const [currentMonth, setCurrentMonth] = useState(getCurrentMonth())
+  const [currentMonth] = useState(getCurrentMonth())
 
   useEffect(() => {
     setFilteredList(filterListByMonth(list, currentMonth))
