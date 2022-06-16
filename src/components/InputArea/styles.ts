@@ -10,9 +10,10 @@ export const Container = styled.div`
   align-items: center;
 `
 
-export const Button = styled.div<{ color: string }>`
+export const Button = styled.button<{ color: string }>`
   background-color: ${props => props.color};
   box-shadow: 0px 0px 5px #CCC;
+  border: none;
   border-radius: 10px;
   padding: 10px;
   display: flex;
